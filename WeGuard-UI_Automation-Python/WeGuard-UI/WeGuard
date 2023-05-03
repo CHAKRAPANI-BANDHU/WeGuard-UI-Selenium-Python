@@ -1,0 +1,5 @@
+#!/bin/sh
+
+FILE="UI_Automation_Report_$(date +%d%m%Y_%H%M%S).html"
+echo $FILE
+python3 -m pytest --capture=sys --html=$FILE
